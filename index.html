@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="tr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mathio | 6. Sınıf Matematik</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <div id="auth-container" class="panel auth-panel">
+        <div class="mathio-avatar" aria-label="Mathio mascot">🐱‍👓</div>
+        <h1>Mathio ile Çalışıyoruz</h1>
+        <p class="subtitle">2026-2027 6. Sınıf Matematik Maarif Modeli</p>
+
+        <form id="login-form">
+          <div class="form-group">
+            <label for="username">Kullanıcı Adı / Takma İsim</label>
+            <input id="username" type="text" placeholder="Örn: PatiMatematikçi" required />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Şifre</label>
+            <input id="password" type="password" placeholder="••••••••" required />
+          </div>
+
+          <div class="form-group">
+            <label for="class-select">Sınıf Şubesi</label>
+            <select id="class-select">
+              <option value="6-A">6/A</option>
+              <option value="6-B">6/B</option>
+              <option value="6-C">6/C</option>
+              <option value="6-D">6/D</option>
+            </select>
+          </div>
+
+          <button type="submit" class="primary-btn">Mathio ile Giriş Yap / Kaydol</button>
+        </form>
+      </div>
+
+      <div id="dashboard-container" class="panel dashboard-panel">
+        <header class="user-header">
+          <div>
+            <div class="user-greeting">
+              <span id="display-name">Öğrenci</span>
+              <span class="paw">🐾</span>
+            </div>
+            <small id="display-class">6-A Sınıfı</small>
+          </div>
+
+          <div class="score-box">
+            <span>Pati Puan</span>
+            <strong><span id="puan-count">0</span> 🐾</strong>
+          </div>
+        </header>
+
+        <section class="overview-box">
+          <h2>6. Sınıf Matematik Etkinlikleri</h2>
+          <p>Mathio seninle ders çalışmak için sabırsızlanıyor.</p>
+        </section>
+
+        <div class="topic-card" data-question="1">
+          <div class="topic-title">1. Tema: Çarpanlar ve Katlar</div>
+          <p class="question-text">Aşağıdaki sayılardan hangisi bir <strong>asal sayı</strong>dır?</p>
+          <div class="quiz-option" data-correct="false">A) 9</div>
+          <div class="quiz-option" data-correct="false">B) 15</div>
+          <div class="quiz-option" data-correct="true">C) 17</div>
+          <div class="quiz-option" data-correct="false">D) 21</div>
+        </div>
+
+        <div class="topic-card" data-question="2">
+          <div class="topic-title">2. Tema: Kesirlerle İşlemler</div>
+          <p class="question-text">Bir pizzayı 8 eşit dilime böldük ve 3 dilimini yedik. Pizzanın kaçta kaçı kaldı?</p>
+          <div class="quiz-option" data-correct="false">A) 3/8</div>
+          <div class="quiz-option" data-correct="true">B) 5/8</div>
+          <div class="quiz-option" data-correct="false">C) 8/3</div>
+          <div class="quiz-option" data-correct="false">D) 1/2</div>
+        </div>
+
+        <div class="topic-card" data-question="3">
+          <div class="topic-title">3. Tema: Bölme ve Çarpma</div>
+          <p class="question-text">144 sayısının karekökü kaçtır?</p>
+          <div class="quiz-option" data-correct="false">A) 10</div>
+          <div class="quiz-option" data-correct="false">B) 11</div>
+          <div class="quiz-option" data-correct="true">C) 12</div>
+          <div class="quiz-option" data-correct="false">D) 13</div>
+        </div>
+
+        <div class="topic-card" data-question="4">
+          <div class="topic-title">4. Tema: Oran ve Orantı</div>
+          <p class="question-text">3 elma 6 TL ise 1 elma kaç TL'dir?</p>
+          <div class="quiz-option" data-correct="false">A) 1 TL</div>
+          <div class="quiz-option" data-correct="true">B) 2 TL</div>
+          <div class="quiz-option" data-correct="false">C) 3 TL</div>
+          <div class="quiz-option" data-correct="false">D) 4 TL</div>
+        </div>
+
+        <button id="logout-btn" class="secondary-btn">Çıkış Yap</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast" aria-live="polite"></div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
